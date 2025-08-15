@@ -35,7 +35,7 @@ We welcome contributions from the chess and developer community! This guide will
 Before you begin, ensure you have the following installed:
 
 - **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
-- **pnpm** (recommended) or npm - [Install pnpm](https://pnpm.io/installation)
+- **npm** (recommended) or npm - [Install npm](https://npm.io/installation)
 - **Git** - [Download here](https://git-scm.com/)
 - **PostgreSQL** (for local development) - [Download here](https://postgresql.org/)
 
@@ -64,7 +64,7 @@ git remote add upstream https://github.com/your-org/asia-chess.git
 
 ```bash
 # Install dependencies
-pnpm install
+npm install
 
 # Copy environment variables
 cp .env.example .env
@@ -74,16 +74,16 @@ cp .env.example .env
 # DATABASE_URL="postgresql://username:password@localhost:5432/chess_platform"
 
 # Generate Prisma client and run migrations
-pnpm db:generate
-pnpm db:migrate
-pnpm db:seed
+npm db:generate
+npm db:migrate
+npm db:seed
 ```
 
 #### 4. Start Development Server
 
 ```bash
 # Start the development server
-pnpm dev
+npm dev
 
 # Your app will be available at http://localhost:3000
 ```
@@ -130,10 +130,10 @@ git checkout -b docs/what-youre-documenting
 
 ```bash
 # Before committing, ensure your code passes all checks
-pnpm lint          # ESLint checks
-pnpm type-check    # TypeScript compilation
-pnpm test          # Run test suite
-pnpm format        # Prettier formatting
+npm lint          # ESLint checks
+npm type-check    # TypeScript compilation
+npm test          # Run test suite
+npm format        # Prettier formatting
 ```
 
 #### Commit Message Guidelines
@@ -230,16 +230,16 @@ asia-chess/
 
 ```bash
 # Run all tests
-pnpm test
+npm test
 
 # Run tests in watch mode
-pnpm test:watch
+npm test:watch
 
 # Run tests with coverage
-pnpm test:coverage
+npm test:coverage
 
 # Run specific test files
-pnpm test tournament.test.ts
+npm test tournament.test.ts
 ```
 
 #### Writing Tests
